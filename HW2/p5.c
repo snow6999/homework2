@@ -18,7 +18,7 @@ int main(void)
         int r1=(a>>10) & 0x7;
         int r2=(a>>7) & 0x7;
         int imm=a & 0x7F;
-        
+        arr[0]=0;
         if (opcode==0) arr[r1]+=arr[r2];
         else if (opcode==1) arr[r1]-=arr[r2];
         else if (opcode==2) arr[r1]*=arr[r2];
