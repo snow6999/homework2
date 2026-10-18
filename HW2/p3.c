@@ -11,20 +11,20 @@ int main(void)
 {
     int n;
     scanf("%d",&n);
-    int arr[31];
+    double arr[31];
     for (int i=0;i<n+1;i++){
-        scanf("%d",arr+i);
+        scanf("%lf",arr+i);
     }
     int round;
     scanf("%d",&round);
     for (int i=0;i<round;i++){
         int x;
-        int sum=0;
+        double sum = 0.0;
         scanf("%d",&x);
         for (int j=0;j<n+1;j++){
             sum=sum*x+arr[n-j];
         }
-        printf("%d\n",sum);
+        printf("%.3f\n", sum);
     }
     return 0;
 }
