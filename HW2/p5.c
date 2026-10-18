@@ -24,7 +24,7 @@ int main(void)
         else if (opcode==2) arr[r1]*=arr[r2];
         else if (opcode==3) arr[r1]/=arr[r2];
         else if (opcode==4) arr[r1]=imm;
-        else if (opcode==5) printf("%d",arr[r1]); 
+        else if (opcode==5) printf("x%d = %d\n", r1, arr[r1]); 
 
 
     }
