@@ -10,9 +10,9 @@ int main(void)
 {
     int arr[6]={0,0,0,0,0,0};
     int n;
-    scanf("%d",&n)
+    scanf("%d",&n);
     for (int i=0;i<n;i++){
-        int a;
+        unsigned int a;
         scanf("%x",&a);
         int opcode=a>>13;
         int r1=(a>>10) & 0x7;
