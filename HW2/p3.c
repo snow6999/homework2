@@ -22,7 +22,7 @@ int main(void)
         int sum=0;
         scanf("%d",&x);
         for (int j=0;j<n+1;j++){
-            sum=sum*x+arr[n+1-j];
+            sum=sum*x+arr[n-j];
         }
         printf("%d\n",sum);
     }
